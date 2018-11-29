@@ -2,7 +2,7 @@
 
 Welcome to Ujo's documentation.
 
-Here you'll learn more about Ujo, including our platform which includes --TODO--. You're welcome to help us improve our documentation through the links found at the bottom of each section or by going to our [docs repository](https://github.com/ujoteam/docs). If you have any general questions, email us at [hello@ujomusic.com](mailto:hello@ujomusic.com).
+Here you'll learn more about the Ujo platform, including a number of resources to help get you started developing on it. You're welcome to help us improve our documentation through the links found at the bottom of each section or by going to our [docs repository](https://github.com/ujoteam/docs). If you have any general questions, email us at [hello@ujomusic.com](mailto:hello@ujomusic.com).
 
 ### Introduction
 
