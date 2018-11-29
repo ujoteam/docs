@@ -33,22 +33,24 @@ The smart contract will verify that the funds are correct (paid in ETH), and the
 
 Since it is so flexible, it might be necessary to validate the badges before displaying or using them in an application. This is covered later.
 
-## Using Patronage Badges
-
-Patronage Badges can extended for use in other applications OR you can use it to mint your own Patronage Badges.
-
 ## Building with Patronage Badges
 
-In order to add the Patronage Badges to your wallet, application or extension, it simply has to conform to the ERC721 standard. For any user, with a compatible front-end library (like web3.js) you can query `getAllTokens(<owner address>)` on the smart contract.
-
-The address that is live on mainnet is:
-https://etherscan.io/address/0x2897137df67b209be4a7e20f654dadca720dd113. The ABI can be found here (it's too large for this repo) https://github.com/UjoTeam/contracts-badges/blob/master/build/contracts/UjoPatronageBadgesFunctions.json.
-
-This will return the token IDs related to the specific user address. Once this is received, you can retrieve the additional information related to badge's minting by querying the event logs.
+Patronage Badges can extended for use in other applications OR you can use it to mint your own Patronage Badges. In order to add the Patronage Badges to your wallet, application or extension, it simply has to conform to the ERC721 standard. For any user, with a compatible front-end library (like web3.js) you can query `getAllTokens(<owner address>)` on the smart contract. This will return the token IDs related to the specific user address. Once this is received, you can retrieve the additional information related to badge's minting by querying the event logs.
 
 A more detailed end-to-end example will be coming soon!
 
-## Event Logs for Badge Minting
+### Contract Deployments
+
+| Network         | Address                                                                                                                       |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Mainnet (id: 1) | [0x2897137df67b209be4a7e20f654dadca720dd113](https://etherscan.io/address/0x2897137df67b209be4a7e20f654dadca720dd113)         |
+| Rinkeby (id: 4) | [0x3738edd7e9cdc1641f92d18a53d7fb505fdcb177](https://rinkeby.etherscan.io/address/0x3738edd7e9cdc1641f92d18a53d7fb505fdcb177) |
+
+<br/>
+
+The ABI can be found [here](https://github.com/UjoTeam/contracts-badges/blob/master/build/contracts/UjoPatronageBadgesFunctions.json) (it's too large for this repo).
+
+### Event Logs for Badge Minting
 
 When a badge is minted it will contain information in the event log that is relevant for displaying the badge information.
 
@@ -104,7 +106,7 @@ The smart contract will verify if the usdCostOfBadge is correct, so one can trus
 
 This must match the off-chain metadata. We will write scripts soon that will make it easy to process the badges and verify them.
 
-## Is it the real artist?
+### Is it the real artist?
 
 Considering that Ujo is the primary user of Patronage Badges, we assume that the artist information that is created does indeed refer to the actual artist. If it says `Taylor Swift` it is `Taylor Swift`. However, into the future if Patronage Badges gets used outside of the context of Ujo, this will become harder to verify. In that future, we will help design ways to verify this too.
 

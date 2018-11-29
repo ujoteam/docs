@@ -1,6 +1,6 @@
-### Oracle
+# Oracle
 
-# Ujo Price Oracles (using Oraclize).
+## Ujo Price Oracles (using Oraclize).
 
 In Ujo Music, we utilize an on-chain price oracle that allows fans/musicians to purchase, license and buy badges based on a USD price (but pay in ETH).
 
@@ -42,39 +42,45 @@ Ideally, Oraclize would provide ways to pay EXTRA to be certain that it clears u
 
 This oracle does not utilise proofs that are allowed by Oraclize.
 
-## What is editable?
+### What is editable?
 
 In the oracle, the administrator, the interval, the URL & the gas price can be changed. On the mainnet this is done by the Ujo MultiSig Wallet.
 
-## Edge Cases?
+### Edge Cases?
 
 There are edge cases where you will detect what the price is to pay in ETH, but DURING the transaction, an oracle callback confirms first. This means that it's possible that the transaction does not succeed, especially in the case of buying badges, where the check is explicit.
 
-## Current Intervals
+### Current Intervals
 
 We've been experimenting with different intervals, setting it shorter or longer in different times. For now, we are set on keeping it at getting updates every 12 hours. This is contingent on product releases & price volatility of Ethereum.
 
 ## Using the Oracle
 
 This oracle is open to use by other apps. If you are, please consider topping it up with ETH to help pay for it! :)
-https://etherscan.io/address/0x57257ede587dd4ddf99cf95dbe308830e154acf7
 
-# Testing
+### Contract Deployments
+
+| Network         | Address                                                                                                                       |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Mainnet (id: 1) | [0x57257ede587dd4ddf99cf95dbe308830e154acf7 ](https://etherscan.io/address/0x57257ede587dd4ddf99cf95dbe308830e154acf7)        |
+| Rinkeby (id: 4) | [0x928f3d0659404abb6c79e4b6390d72f3913d7d0b](https://rinkeby.etherscan.io/address/0x928f3d0659404abb6c79e4b6390d72f3913d7d0b) |
+
+## Testing
 
 To test locally, do the following:
 
-1. "npm install"
-2. run "node ./node_modules/ganache-cli/build/cli.node.js --mnemonic "ujo music service" --accounts 5" in its own tab.
-3. run "node ./node_modules/ethereum-bridge/bridge -H localhost:8545 -a 2" in its own tab.
+1. `npm install`
+2. run `node ./node_modules/ganache-cli/build/cli.node.js --mnemonic "ujo music service" --accounts 5` in its own tab.
+3. run `node ./node_modules/ethereum-bridge/bridge -H localhost:8545 -a 2` in its own tab.
 4. follow the instructions and copy the relevant line of code into the USDETHOracle_localhost contract [the default should be the same, so this might not be necessary].
-5. "npm run test" [runs linter & does truffle test --network ganachecli]
+5. `npm run test` [runs linter & does truffle test --network ganachecli]
 
 It sets the calls 20 seconds apart. In some circumstances the tests might fail due to prices staying the same.
 
-# CI
+## CI
 
 CircleCI mimics the above steps to run tests, except it adds coverage reporting.
 
-# Coverage
+## Coverage
 
 Coverage plans to be added, but it is currently hanging infrequently on instrumentation. Opened up an issue.

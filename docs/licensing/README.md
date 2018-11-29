@@ -7,3 +7,8 @@ LogPayment(
     _cid, _oracle, ethUSD, msg.value, msg.sender, _buyer, _beneficiaries, _amounts
 );
 ```
+
+| Network         | Address                                                                                                                       |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Mainnet (id: 1) | [0x0be87716eda791a5c1f9b73e08b47cee2b43e59f](https://etherscan.io/address/0x0be87716eda791a5c1f9b73e08b47cee2b43e59f)         |
+| Rinkeby (id: 4) | [0x4cd36d101197b299fdd79254372541941e950066](https://rinkeby.etherscan.io/address/0x4cd36d101197b299fdd79254372541941e950066) |

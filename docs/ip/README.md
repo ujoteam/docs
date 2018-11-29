@@ -1,7 +1,9 @@
-### Decentralized IP
+# Decentralized IP
 
 [COALA IP](https://www.coalaip.org) is a blockchain-ready, community-driven protocol for
-intellectual property licensing.
+intellectual property licensing. The acronym itself stands for The Coalition Of Automated Legal Applications — Intellectual Property (COALA IP).
+
+As stated on the COALA IP site: “COALA IP’s goal is to establish open, free, and easy-to-use ways to record attribution information and other metadata about works, assign or license rights, mediate disputes, and authenticate claims by others.” The initial implementation of the spec was built by [BigchainDB](https://github.com/COALAIP/pycoalaip). Following their lead and in close collaboration with their team, we built the JavaScript implementation of of the protocol. The need for a metadata standard that fits the requirements of decentralized licensing is not specific to only Ujo, and there has been a lot of continued interest in this project so we plan to continue iterating on this project in collaboration with the community.
 
 ## JavaScript Implementation
 

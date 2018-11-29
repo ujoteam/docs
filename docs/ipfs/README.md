@@ -1,4 +1,4 @@
-### IPFS
+# IPFS
 
 **[InterPlanetary File System](https://ipfs.io) (IPFS)** is a protocol and network designed to create a content-addressable, peer-to-peer method of storing and sharing hypermedia in a distributed file system. For a great introduction to IPFS concepts, please check out this [blog post](https://medium.com/@ConsenSys/an-introduction-to-ipfs-9bba4860abd0) which gives both a high-level overview as well as a deeper dive into the technology.
 

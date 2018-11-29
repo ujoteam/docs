@@ -24,7 +24,12 @@ module.exports = {
       {
         title: "Web3",
         collapsable: false,
-        children: ["/truffle/", "/infura/", "/metamask/", "/ipfs/"]
+        children: ["/truffle/", "/infura/", "/metamask/", "/uport/", "/ipfs/"]
+      },
+      {
+        title: "Reference",
+        collapsable: false,
+        children: ["/links/"]
       }
       // add new top level sections here...
     ],
