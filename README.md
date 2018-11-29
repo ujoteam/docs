@@ -1,7 +1,6 @@
 # Ujo Docs
 
 <!-- TODO - Waffle -->
-
 <!-- [![Waffle.io - Columns and their card count](https://badge.waffle.io/)](https://waffle.io/ujoteam/docs) -->
 
 ## Editing

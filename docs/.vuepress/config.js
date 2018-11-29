@@ -17,13 +17,14 @@ module.exports = {
           "/collectibles/",
           "/licensing/",
           "/ip/",
-          "/registry/"
+          "/registry/",
+          "/oracle/"
         ]
       },
       {
         title: "Web3",
         collapsable: false,
-        children: ["/truffle/", "/infura/", "/metamask/", "/uport/"]
+        children: ["/truffle/", "/infura/", "/metamask/", "/ipfs/"]
       }
       // add new top level sections here...
     ],
