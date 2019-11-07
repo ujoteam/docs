@@ -10,7 +10,7 @@ module.exports = {
         children: ["/"]
       },
       {
-        title: "Ujo Core",
+        title: "Ujo Portal",
         collapsable: false,
         children: [
           "/getting-started/",
@@ -19,6 +19,20 @@ module.exports = {
           "/ip/",
           "/registry/",
           "/oracle/"
+        ]
+      },
+      {
+        title: "Charts",
+        collapsable: false,
+        children: [
+          "/charts/",
+        ]
+      },
+      {
+        title: "Smart-Licensing",
+        collapsable: false,
+        children: [
+          "/smart-licensing/",
         ]
       },
       {
