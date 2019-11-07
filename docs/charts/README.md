@@ -1,4 +1,4 @@
-# Smart contracts for curation markets, charts, etc.
+# Curation
 
 **Table of contents**
 
